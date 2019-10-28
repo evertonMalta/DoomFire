@@ -17,7 +17,6 @@ function start() {
 
 function createFireDataStructure() {
     const numberOfPixels = fireWidth * fireHeight
-
     for ( let i = 0; i < numberOfPixels; i++) {
         firePixelsArray[i] = 0
     }
@@ -87,7 +86,6 @@ function createFireSource() {
     for( let colunn = 0; colunn <= fireWidth; colunn++) {
         const overflowPixelIndex = fireWidth * fireHeight
         const pixelIndex = (overflowPixelIndex - fireWidth) + colunn
-
         firePixelsArray[pixelIndex] = 36
     }
 }
